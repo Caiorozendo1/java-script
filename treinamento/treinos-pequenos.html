@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equaçao de 2° grau</title>
+    <style>
+        body{
+            background-color: lightgreen;
+            color: black;
+        }
+        .container{
+            border: 1px solid black;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1{
+            font-size: 2em;
+            text-align: center;
+        }
+        #res{
+            text-align: center;
+            margin-top: 20px;
+           
+        }
+        p{
+            position: absolute;
+            left: 550px;
+            top: 203px;
+            
+            width: 300px;
+            padding: 10px;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <h1>Calculadora de equação de 2° Grau</h1>
+   <div class="container">
+       
+       <div id="texto1">Digite o valor de A: <input type="number" name="tn1" id="itn1"><br></div>
+       <div id="texto2">Digite o valor de B:<input type="number" name="tn2" id="itn2"> <br></div>
+       <div id="texto3">Digite o valor de C:<input type="number" name="tn3" id="itn3"></div>
+       <div id="botao"><input type="button" value="calcular" onclick="clicar()"></div>
+   </div>
+   <div id="res"></div>
+   <p>o valor de delta é:</p>
+   <script>
+    function clicar(){
+        var tn1 = window.document.getElementById('itn1')
+        var tn2 = window.document.getElementById('itn2')
+        var tn3 = window.document.getElementById('itn3')
+        const res = window.document.getElementById('res')
+        var a = Number(tn1.value)
+        var b = Number(tn2.value)
+        var c = Number(tn3.value)
+        res.innerHTML =  b**2 - 4*a*c
+        
+    } 
+   </script>
+</body>
+</html>
