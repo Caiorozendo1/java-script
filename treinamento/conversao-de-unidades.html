@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de unidades</title>
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+        h1{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Unidades(Em Metros)</h1>
+    <script>
+        const dis = Number(window.prompt('digite uma distância em metros'))
+        const km = dis / 1000
+        const hm =  dis / 100
+        const dam =  dis / 10
+        const dm = dis * 10
+        const cm = dis * 100
+        const mm = dis * 1000
+        document.write(`A distância de ${dis}m corresponde a: <br/>`)
+        document.write(`${km}km <br/>`)
+        document.write(`${hm}hm  <br/>`)
+        document.write(`${dam}dam  <br/>`)
+        document.write(`${dm.toFixed(1)}dm  <br/>`)
+        document.write(`${cm.toFixed(1)}cm  <br/>`)
+        document.write(`${mm.toFixed(1)}mm`)
+    </script>
+</body>
+</html>
