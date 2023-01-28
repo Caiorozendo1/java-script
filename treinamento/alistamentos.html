@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alistamento</title>
+</head>
+<body>
+    <h1>alistamento</h1>
+    Digite o ano de nascimento: <input type="number" name="ano" id="iano">
+    <input type="button" value="enviar>" onclick="calcular()">
+    <div id="resp"></div>
+    <script>
+        function calcular(){
+        var iano = window.document.getElementById('iano')
+        var ano = Number(iano.value)
+        var resp = window.document.getElementById('resp')
+        var idade = 2023 - ano
+        if (idade < 18){
+            var faltam = 18 - idade
+            resp.innerHTML = `Ainda faltam ${faltam} anos para o seu alistamento militar`
+        } else{
+            var passou = idade - 18
+            resp.innerHTML = `Já se passaram ${passou} anos desde do seu alistamento`
+        }
+    }
+    </script>
+</body>
+</html>

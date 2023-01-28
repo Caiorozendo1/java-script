@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de países</title>
+</head>
+<body>
+    <h1>Alfândega</h1>
+    Digite o seu país: <input type="text" name="txt" id="itxt">
+    <input type="button" value="enviar >" onclick="clicar()">
+    <div id="res">Resultado</div>
+    <script>
+        function clicar(){
+            var res = window.document.getElementById('res')
+            var pais = window.document.getElementById('itxt')
+            //var bras = pais.value
+            if (pais.value == 'brasil'){
+                res.innerHTML = 'Você é brasileiro!'
+            } else{
+                res.innerHTML = 'Você é estrangeiro!'
+            }
+        }
+    </script>
+
+</body>
+</html>
