@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treinos-pequenos</title>
+</head>
+<body>
+    <h1>TREINOS PEQUENOS</h1>
+    Digite um número: <input type="number" name="n1" id="in1"> <br>
+    <input type="button" value="calcular" onclick="clicar()">
+    <div id="resp1">Resposta</div>
+    <script>
+        function clicar(){
+            var in1 = window.document.getElementById('in1')
+            var resp1= window.document.getElementById('resp1')
+            var resp2 = window.document.getElementById('resp2')
+            var num = Number(in1.value)
+            var num1 = num + 1
+            var num2 = num - 1
+            resp1.innerHTML = `O sucessor de ${in1.value} é ${num1} <br/>  o antecessor de ${in1.value} é ${num2}`
+        }
+    </script>
+</body>
+</html>
