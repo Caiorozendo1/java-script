@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos pequenos</title>
+</head>
+<body>
+    <h1>Triangulos</h1>
+    Digite o valor do lado A: <input type="number" name="la" id="ila"> <br>
+    Digite o valor do lado B: <input type="number" name="lb" id="ilb"> <br>
+    Digite o valor do lado C: <input type="number" name="lc" id="ilc"> <br>
+    <input type="button" value="enviar" onclick="clicar()">
+    <div id="resp">resp</div>
+    <script>
+        function clicar(){
+            var resp = window.document.getElementById('resp')
+            var ila = window.document.getElementById('ila')
+            var ilb = window.document.getElementById('ilb')
+            var ilc = window.document.getElementById('ilc')
+            var la = Number(ila.value)
+            var lb = Number(ilb.value)
+            var lc = Number(ilc.value)
+            //aprendi a usar os relacionais!
+            if (la < lb + lc  && lb < la + lc && lc < lb + la) {
+                resp.innerHTML = `Pode ser um triangulo`
+            }else {
+                resp.innerHTML = 'nao pode ser um triangulo'
+            }
+           
+        }
+    </script>
+</body>
+</html>

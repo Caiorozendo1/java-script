@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos-pequenos</title>
+</head>
+<body>
+    <h1>Treinozinho de leve</h1>
+   Nome: <input type="text" name="nome" id="inome">
+   Sexo:[H/F] <input type="text" name="sexo" id="isexo"> <br>
+   Valor da compra: <input type="number" name="compra" id="icompra">
+   <input type="button" value="enviar >" onclick="clicar()">
+   <div id="resp">resp</div>
+   <script>
+        function clicar(){
+            var resp = document.getElementById('resp')
+            var nome = document.getElementById('inome')
+            var sexo = document.getElementById('isexo')
+            var icompra = document.getElementById('icompra')
+            var H = 'H'
+            var compra = Number(icompra.value)
+            if(nome.value == H) {
+                var desc1 = compra - (compra * 0.05)
+                resp.innerHTML = `O valor com desconto senhor ${nome.value}, é ${desc1}`
+            } else {
+                var desc2 = compra - (compra * 0.13)
+                resp.innerHTML = `O seu valor com desconto senhora ${nome.value}, é ${desc2}`
+            }
+        }
+   </script>
+</body>
+</html>
