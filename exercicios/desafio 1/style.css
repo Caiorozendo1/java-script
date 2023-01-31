@@ -1,0 +1,40 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lightcoral;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+#container{
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    box-sizing: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
+}
+#resp{
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    font-size: 1.5em;
+}
+#container > img{
+    position: absolute;
+    left: 125px;
+    top: 100px;
+}
+footer > p{
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
