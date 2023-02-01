@@ -24,9 +24,14 @@
             var lc = Number(ilc.value)
             //aprendi a usar os relacionais!
             if (la < lb + lc  && lb < la + lc && lc < lb + la) {
-                resp.innerHTML = `Pode ser um triangulo`
+                resp.innerHTML = `Pode ser um triangulo <br/>`
             }else {
-                resp.innerHTML = 'nao pode ser um triangulo'
+                resp.innerHTML = 'nao pode ser um triangulo <br/>'
+            }
+            if (la.value == lb.value && lb.value == lc.value && lc.value == la.value){
+                resp.innerHTML += 'EQUILÁTERO'
+            } else if(la.value != lb.value && la.value != lc.value && lc.value != lb.value){
+                resp.innerHTML = 'ESCALENO'
             }
            
         }
