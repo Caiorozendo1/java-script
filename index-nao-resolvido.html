@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinin</title>
+</head>
+<body>
+    <h1>Bora Praticar?</h1>
+    tipo de carro: <br> 
+    Luxo:<input type="radio" name="car" id="carlux">
+    Popular:<input type="radio" name="car" id="carpop"> <br>
+    Dias de aluguel:<input type="number" name="alug" id="ialug"> <br>
+    Km percorridos: <input type="number" name="km" id="ikm">
+    <input type="button" value="enviar>" onclick="clicar()">
+    <div id="resp">resp</div>
+    <script>
+        function clicar(){
+            var resp = window.document.getElementById('resp')
+            var lux = window.document.getElementById('carlux')
+            var pop = window.document.getElementById('carpop')
+            var km = window.document.getElementById('ikm')
+            var dias = window.document.getElementById('ialug')
+            if(lux.checked){
+                var alugd = 150 * Number(dias.value)
+                if (Number(km.value) <= 100){
+                    var alugkm = 0.2 * Number(km.value)
+                    var total = alugd + alukm
+                    resp.innerHTML = total
+                }else{
+                    var alugkm = 0.1 * Number(km.value)
+                    var total = alugd + alukm
+                }
+            } else{
+                resp.innerHTML = 'Carro popular selecionado'
+            }
+        }
+    </script>
+</body>
+</html>

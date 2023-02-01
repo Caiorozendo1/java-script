@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treinos-pequenos</title>
+    <title>Bora simbora!</title>
 </head>
 <body>
-    <h1>Bora treinar!</h1>
-    
+    <h1>Boraaaa</h1>
+    inicio: <input type="number" name="num" id="inum">
+    <input type="button" value="contar" onclick="clicar()">
+    <div id="resp"></div>
+    <script>
+        function clicar(){
+            var resp = window.document.getElementById('resp')
+            var num = window.document.getElementById('inum')
+            var val = Number(num.value)
+            //var c = 1
+            while(val <= 6){
+                resp.innerHTML += `${c}...`
+                num++
+            } 
+        }
+    </script>
 </body>
 </html>
