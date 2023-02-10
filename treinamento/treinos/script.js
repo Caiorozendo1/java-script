@@ -1,14 +1,12 @@
-let t1 = 1
-let t2 = 1
-for(let c = 1;c < 15;c++){
-    if(c == 1 || c == 2){
-        console.log(1)
-    }else{
-        let tn = t1 + t2
-        console.log(tn)
-        t1 = t2
-        t2 = tn
-    }
+const times = ['barcelona', 'real madrid','chelsea','flamengo']
+console.log('array original: ',times)
 
-}
+const n = [1, 203748, 3, 849, 10]
+
+// 1- sort e reverse
+console.log('sort: ', times.sort()) // apenas para strings
+console.log('reverse: ', times.reverse())
+
+// forEach = acao
+
 
